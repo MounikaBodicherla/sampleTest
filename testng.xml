@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+   <listener class-name="Resources.ExtentReporterNG"/>
+   </listeners>
+  <test name="Test on chrome">
+  
+   <parameter name="Browser" value="chrome" />
+  <classes>
+  <class name='TourRadar.TourRadar.TestCases'/>
+  
+  </classes>
+  </test> <!-- Test -->
+  
+    <test name="Test on firefox">
+   <parameter name="Browser" value="firefox" />
+  <classes>
+  <class name='TourRadar.TourRadar.TestCases'/>
+  
+  </classes>
+  </test> 
+</suite> <!-- Suite -->

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="Browser" value="firefox"/>
+  <listeners>
+    <listener class-name="Resources.ExtentReporterNG"/>
+  </listeners>
+  <test name="Test on firefox(failed)">
+    <parameter name="Browser" value="firefox"/>
+    <classes>
+      <class name="TourRadar.TourRadar.TestCases">
+        <methods>
+          <include name="tear"/>
+          <include name="tear"/>
+          <include name="runCapabilities"/>
+          <include name="runCapabilities"/>
+          <include name="travellerLogin"/>
+        </methods>
+      </class> <!-- TourRadar.TourRadar.TestCases -->
+    </classes>
+  </test> <!-- Test on firefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->
